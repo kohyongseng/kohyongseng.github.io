@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: rgb(196, 226, 245);
+}
+
+h1 {
+    color: rgb(44, 94, 173);
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: rgb(21, 145, 220);
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+button {
+    background-color: rgb(75, 184, 250);
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}

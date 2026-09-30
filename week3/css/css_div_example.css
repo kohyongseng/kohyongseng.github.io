@@ -1,0 +1,15 @@
+div.bigbox {
+    display: flex;
+}
+
+div.london {
+    background-color: #FFF4A3;
+}
+
+div.olso {
+    background-color: #FFC0C7;
+}
+
+div.rome {
+    background-color: #D9EEE1;
+}

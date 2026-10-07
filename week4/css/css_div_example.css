@@ -1,0 +1,48 @@
+.bigbox {
+    display: flex;
+    gap: 20px;
+    max-width: 1080px;
+    margin: auto;
+}
+
+.box {
+    padding: 10px;
+    flex: 1;
+}
+
+.london {
+    background-color: #FFF4A3;
+}
+
+.olso {
+    background-color: #FFC0C7;
+    flex: 2;
+}
+
+.rome {
+    background-color: #D9EEE1;
+}
+
+@media (max-width: 600px) {
+    .bigbox {
+        flex-direction: column;
+    }
+
+    .box {
+        font-size: 18px;
+    }
+
+    .rome {
+        background-color: rgb(178, 178, 245);
+    }
+}
+
+@media (max-width: 500px) {
+    .rome {
+        background-color: rgb(232, 160, 235);
+    }
+
+    .olso {
+        display: none;
+    }
+}

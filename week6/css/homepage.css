@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.banner {
+    min-height: 600px;
+    background-image: url(../image/background.jpg);
+    background-size: cover;
+}
+
+.hamburger {
+    display: none;
+}
+
+.banner_menu {
+    display: flex;
+    gap: 40px;
+    text-align: center;
+    align-items: center;
+    justify-content: right;
+    padding: 10px;
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+    font-family: 'Manrope', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.İletişim {
+    background-color: #F84646;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+}
+
+.banner_contant {
+    width: 50%;
+    padding: 80px;
+}
+
+.subscribe {
+    background-color: #F84646;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+}
+
+.email_input {
+    border: none;
+}
+
+.subscribe-form {
+    display: inline-block;
+    background-color: white;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.email_input:focus {
+    outline: none;
+}
+
+.body1 {
+    padding: 50px;
+}
+
+.body1-contant {
+    text-align: center;
+    padding: 25px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.card {
+    text-align: center;
+}
+
+.question {
+    background-color: #F84646;
+    color: white;
+    padding: 40px;
+}
+
+.question-title {
+    text-align: center;
+}
+
+.question-contant {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    gap: 30px;
+}
+
+.body2 {
+    padding: 70px;
+}
+
+.body2 img {
+    width: 300px;
+}
+
+.ingredient1 {
+    display: flex;
+    gap: 80px;
+    padding: 30px;
+    margin: auto;
+}
+
+.ingredient2 {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin: auto;
+}
+
+.Keşfet {
+    background-color: #F84646;
+    border: none;
+    padding: 15px 50px;
+    color: white;
+    border-radius: 5px;
+    margin: auto;
+}
+
+@media (max-width: 1024px) {
+    .banner {
+        background-position: center 60%;
+    }
+
+    .banner_contant {
+        width: 70%;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .banner {
+        background-position: center 80%;
+    }
+
+    .banner_contant {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .question-contant {
+        flex-direction: column;
+    }
+
+}

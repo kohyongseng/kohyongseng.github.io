@@ -1,0 +1,74 @@
+.banner {
+    background-color: black;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 10px 50px;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+}
+
+.romaliya {
+    display: flex;
+    align-items: center;
+}
+
+.romaliya p {
+    margin: 20px;
+    font-family: 'Bebas Neue';
+    font-size: 30px;
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+    font-size: 12px;
+    font-family: 'Work Sans';
+    align-items: center;
+}
+
+.hamburgers {
+    display: none;
+}
+
+.footer {
+    position: relative;
+    width: 100%;
+    min-height: 500px;
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../image/bg3.png);
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    flex-direction: column;
+}
+
+.footer_content {
+    max-width: 650px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.footer_content h1 {
+    margin-left: 25px;
+    font-family: 'Bebas Neue';
+    font-size: 40px;
+}
+
+.brand_slogan {
+    font-family: 'Lora';
+    font-size: 18px;
+    line-height: 1.5;
+    margin-left: 60px;
+    margin-right: 60px;
+    text-align: center;
+}
+
+.social_icon {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}

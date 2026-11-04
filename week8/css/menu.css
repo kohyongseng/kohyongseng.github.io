@@ -45,6 +45,7 @@
     justify-content: center;
     align-items: stretch;
     gap: 20px;
+    max-width: 2400px;
     margin: 0 auto;
     padding: 40px 60px;
 }
@@ -76,8 +77,8 @@
     font-family: 'Bebas Neue', cursive;
     font-size: 25px;
     text-align: right;
-    margin-top: 10px;
-    background: linear-gradient(270deg, rgb(158, 154, 154), transparent);
+    padding: 10px 15px;
+    background: linear-gradient(270deg, rgb(214, 212, 212), transparent);
 }
 
 .menu-course {
@@ -192,12 +193,11 @@
     max-width: 280px;
     display: flex;
     flex-direction: column;
-    box-sizing: border-box;
 }
 
 .dessert-img {
     width: 100%;
-    height: 320px;
+    height: 400px;
     background-size: cover;
     background-position: center;
 }
@@ -221,13 +221,12 @@
 .dessert-info {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    margin-top: 15px;
+    align-items: center;
 }
 
 .dessert-name {
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 18px;
+    font-size: 25px;
     letter-spacing: 1px;
     color: #000000;
     margin: 0;
@@ -241,6 +240,77 @@
     font-weight: 600;
     color: #000000;
     margin: 0;
+    font-weight: normal;
+}
+
+.top {
+    flex-direction: column-reverse;
+    margin-top: 200px;
+}
+
+.croctail {
+    width: 100%;
+    min-height: 600px;
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../image/bg2.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 60px 80px;
+    position: relative;
+}
+
+.croctail-content {
+    color: white;
+    max-width: 500px;
+}
+
+.croctail-content h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 90px;
+    letter-spacing: 2px;
+    margin: 0 0 5px 0;
+    line-height: 1.1;
+}
+
+.subtitle {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 13px;
+    letter-spacing: 3px;
+    color: #cccccc;
+    margin: 0 0 20px 0;
+}
+
+.divider-line {
+    width: 50px;
+    height: 1px;
+    background-color: #ffffff;
+    margin-top: 60px;
+    margin-bottom: 25px;
+    opacity: 0.6;
+}
+
+.section-desc {
+    font-family: 'Lora', serif;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #dddddd;
+    margin: 0 0 40px 0;
+    max-width: 420px;
+}
+
+.about-me {
+    display: inline-block;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    border: 1px solid #ffffff;
+    padding: 12px 25px;
+    background-color: black;
+    color: white;
+    font-family: 'Work Sans', sans-serif;
 }
 
 @media (max-width: 1024px) {
@@ -254,13 +324,59 @@
 
     .menu_section {
         flex-direction: column;
-        height: 2000px;
+        padding: 20px;
+    }
+
+    .card {
+        flex: unset;
+        width: 100%;
+        height: 420px;
+    }
+
+    .menu-course {
+        flex-direction: column;
+        padding: 40px 0;
+        gap: 30px;
+    }
+
+    .course-image {
+        width: 100%;
+        height: 200px;
+    }
+
+    .menu-content {
+        width: 100%;
+        font-size: 40px;
+        padding: 40px 30px;
+    }
+
+    .dessert-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dessert-card {
+        max-width: 100%;
+        width: 70%;
+    }
+
+    .top {
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .top .dessert-info {
+        margin-top: 15px;
+        margin-bottom: 0;
     }
 }
 
 @media (max-width: 640px) {
     .menu_section {
-        height: 1500px;
-        padding: 20px 0px;
+        padding: 15px;
+    }
+
+    .card {
+        height: 360px;
     }
 }

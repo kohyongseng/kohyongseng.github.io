@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:ital,wght@0,400..700;1,400..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+.body {
+    margin: 0;
+}
+
+.banner {
+    position: absolute;
+    background: none;
+}
+
+.banner-title {
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../image/order-bg1.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 420px;
+}
+
+.title {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 14px;
+    letter-spacing: 3px;
+    color: #ffffff;
+    margin: 0 0 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+.subtitle {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 70px;
+    letter-spacing: 2px;
+    color: #ffffff;
+    margin: 0;
+    line-height: 1;
+}
+
+.favourate-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 0 150px;
+    padding: 60px 20px;
+    box-sizing: border-box;
+    color: black;
+}
+
+.leftchoose {
+    max-width: 400px;
+}
+
+.leftchoose h3 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 11px;
+    letter-spacing: 2px;
+    margin: 0 0 12px 0;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.leftchoose h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 42px;
+    letter-spacing: 1.5px;
+    margin: 0 0 16px 0;
+    line-height: 1;
+    font-weight: normal;
+}
+
+.leftchoose p {
+    font-family: 'Lora', serif;
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.btn-cart {
+    display: inline-block;
+    padding: 14px 28px;
+    border: 1px solid #cccccc;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #333333;
+    text-align: center;
+}
+
+.dish-section {
+    background-color: black;
+    padding: 60px 20px;
+    margin: 0;
+}
+
+.ds-header {
+    margin-bottom: 40px;
+    margin-left: 85px;
+}
+
+.ds-header p {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 11px;
+    letter-spacing: 2px;
+    margin: 0 0 8px 0;
+    text-transform: uppercase;
+}
+
+.ds-header h3 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 38px;
+    letter-spacing: 1.5px;
+    margin: 0;
+    font-weight: normal;
+}
+
+.dish-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.dish {
+    display: flex;
+    margin-bottom: 30px;
+    flex-direction: row;
+}
+
+.dish-card {
+    background-color: #222222;
+    display: flex;
+    flex-direction: column;
+    max-width: 550px;
+}
+
+.dish-img {
+    width: 100%;
+    height: 440px;
+    background-size: cover;
+    background-position: center;
+}
+
+.losbster {
+    background-image: url('../image/lobster.png');
+}
+
+.duck {
+    background-image: url('../image/duck.png');
+}
+
+.dish-content {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    max-width: 70%;
+}
+
+.dish-tag {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    color: #999999;
+    margin-bottom: 10px;
+}
+
+.dish-title {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 28px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    margin-bottom: 12px;
+}
+
+.dish-desc {
+    font-family: 'Lora', serif;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #cccccc;
+    margin-bottom: 20px;
+}
+
+.dish-price {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.dish-action {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0 30px 30px 30px;
+}
+
+.add-to-cart {
+    flex: 1;
+    height: 40px;
+    padding: 0 20px;
+    background-color: #b89c66;
+    color: #ffffff;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.view-cart {
+    height: 40px;
+    padding: 0 18px;
+    background-color: transparent;
+    border: 1px solid #444444;
+    color: #cccccc;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.special-dish {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    box-sizing: border-box;
+}
+
+.sd-card {
+    display: flex;
+    flex-direction: row;
+    background-color: #000000;
+    width: 100%;
+    min-height: 380px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.left-item {
+    flex: 1;
+    min-height: 400px;
+}
+
+.sd-card-img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.pork-img {
+    background-image: url('../image/pork.png');
+}
+
+.right-item {
+    flex: 1;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sd-tag {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #888888;
+    margin: 0 0 12px 0;
+    text-transform: uppercase;
+}
+
+.sd-title {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 38px;
+    letter-spacing: 1.5px;
+    color: #ffffff;
+    margin: 0 0 60px 0;
+    line-height: 1.1;
+    font-weight: normal;
+}
+
+.sd-desc {
+    font-family: 'Lora', serif;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #cccccc;
+    margin: 0 0 35px 0;
+    max-width: 400px;
+}
+
+.sd-action {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.atc {
+    height: 42px;
+    padding: 0 28px;
+    background-color: #f5f5f5;
+    color: #000000;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 11px;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+form {
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.value-button {
+    display: inline-block;
+    border: 1px solid #ddd;
+    margin: 0px;
+    width: 33.33%;
+    height: 40px;
+    text-align: center;
+    padding: 0;
+    color: inherit;
+    font: inherit;
+}
+
+.value-button:hover {
+    cursor: pointer;
+}
+
+form .decrease {
+    margin-right: -4px;
+}
+
+form .increase {
+    margin-left: -4px;
+}
+
+input.quantity {
+    text-align: center;
+    border: none;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin: 0px;
+    width: 33.33%;
+    height: 40px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <link rel="stylesheet" href="css/headerfooter.css">
+    <link rel="stylesheet" href="css/order.css">
+</head>
+
+<body>
+    <div class="banner">
+        <div class="romaliya">
+            <img src="image/romaliya logo.png" alt="romaliya logo">
+            <p>ROMALIYA</p>
+        </div>
+
+        <div class="banner_menu">
+            <div class="menu">
+                <div>Home</div>
+                <div>Menu</div>
+                <div>Order</div>
+                <div>Promotion</div>
+                <div>About Us</div>
+                <div>Our Restaurant</div>
+                <img src="image/order.png" alt="order" width="20px" height="20px">
+            </div>
+
+            <div class="hamburgers">
+                <img src="image/hamburgers.png" alt="hamburgers" width="25px" height="25px">
+            </div>
+
+        </div>
+    </div>
+
+    <div class="banner-title">
+        <div class="content">
+            <p class="title">ROMALIYA TAKEOUT</p>
+            <h1 class="subtitle">ORDER ONLINE</h1>
+        </div>
+    </div>
+
+    <div class="favourate-section">
+        <div class="leftchoose">
+            <h3>FROM OUR KITCHEN TO YOUR TABLE</h3>
+            <h1>Choose your favourites</h1>
+            <p>Select a quantity, add your dishes to the cart, then review everything before checkout.</p>
+        </div>
+        <div class="rightchoose">
+            <div class="btn-cart">VIEW CART</div>
+        </div>
+    </div>
+
+    <div class="dish-section">
+        <div class="ds-header">
+            <p>CHEF'S SIGNATURES</p>
+            <h3>FINE DINING FAVORITES</h3>
+        </div>
+
+        <div class="dish-grid">
+            <div class="dish">
+                <div class="dish-card">
+                    <div class="dish-img losbster"></div>
+                    <div class="dish-content">
+                        <div class="dish-tag">SIGNATURE SEAFOOD</div>
+                        <div class="dish-title">BUTTER-POACHED LOBSTER</div>
+                        <div class="dish-desc">Tender lobster gently poached in butter for a rich, delicate finish.
+                        </div>
+                        <div class="dish-price">$ 88</div>
+                    </div>
+
+                    <div class="dish-action">
+                        <div>
+                            <form>
+                                <button type="button" class="value-button decrease"
+                                    aria-label="Decrease quantity">-</button>
+                                <input type="number" class="quantity" value="1" min="1" />
+                                <button type="button" class="value-button increase"
+                                    aria-label="Increase quantity">+</button>
+                            </form>
+                        </div>
+                        <div><button class="add-to-cart">ADD TO CART</button></div>
+                        <div><button class="view-cart">VIEW CART</button></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dish">
+                <div class="dish-card">
+                    <div class="dish-img duck"></div>
+                    <div class="dish-content">
+                        <div class="dish-tag">CHEF'S PICK</div>
+                        <div class="dish-title">DUCK BREAST WITH CHERRY SAUCE</div>
+                        <div class="dish-desc">Juicy duck breast paired with a bright cherry sauce for a sweet-savory
+                            balance.</div>
+                        <div class="dish-price">$ 58</div>
+                    </div>
+
+                    <div class="dish-action">
+                        <div>
+                            <form>
+                                <button type="button" class="value-button decrease"
+                                    aria-label="Decrease quantity">-</button>
+                                <input type="number" class="quantity" value="1" min="1" />
+                                <button type="button" class="value-button increase"
+                                    aria-label="Increase quantity">+</button>
+                            </form>
+                        </div>
+                        <div><button class="add-to-cart">ADD TO CART</button></div>
+                        <div><button class="view-cart">VIEW CART</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="special-dish">
+        <div class="sd-card">
+            <div class="left-item">
+                <div class="sd-card-img pork-img"></div>
+            </div>
+
+            <div class="right-item">
+                <div class="sd-tag">house favourite</div>
+                <div class="sd-title">Twice Cooked Pork</div>
+                <div class="sd-desc">Nunc nec neque cras id dui curabitur blandit mollis lacus.</div>
+
+                <div class="sd-action">
+                    <div>
+                        <form>
+                            <button type="button" class="value-button decrease"
+                                aria-label="Decrease quantity">-</button>
+                            <input type="number" class="quantity" value="1" min="1" />
+                            <button type="button" class="value-button increase"
+                                aria-label="Increase quantity">+</button>
+                        </form>
+                    </div>
+                    <div><button class="atc">ADD TO CART</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer_content">
+            <img src="image/romaliya logo.png" alt="romaliya logo">
+            <h1>ROMALIYA</h1>
+        </div>
+
+        <div class="brand_slogan">
+            <p>From the first welcome to the last bite, every detail is designed to create a memorable dining experience
+                for you and your loved ones.
+            </p>
+        </div>
+
+        <div class="social_icon">
+            <img src="image/facebook.png" alt="facebook">
+            <img src="image/x.png" alt="x">
+            <img src="image/instragram.png" alt="instragram">
+            <img src="image/youtube.png" alt="youtube">
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('form').forEach((form) => {
+            form.addEventListener('click', (event) => {
+                const button = event.target.closest('.increase, .decrease');
+                if (!button) return;
+
+                const input = form.querySelector('.quantity');
+                const value = Number.parseInt(input.value, 10) || 1;
+                const change = button.classList.contains('increase') ? 1 : -1;
+
+                input.value = Math.max(1, value + change);
+            });
+        });
+    </script>
+</body>
+
+</html>

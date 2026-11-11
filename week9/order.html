@@ -36,8 +36,15 @@
 
     <div class="banner-title">
         <div class="content">
-            <p class="title">ROMALIYA TAKEOUT</p>
-            <h1 class="subtitle">ORDER ONLINE</h1>
+            <div class="first">
+                <p class="title">ROMALIYA TAKEOUT</p>
+                <h1 class="subtitle">ORDER ONLINE</h1>
+            </div>
+
+            <div class="second">
+                <p class="title">YOUR ORDER</p>
+                <h1 class="subtitle">CART</h1>
+            </div>
         </div>
     </div>
 
@@ -116,17 +123,17 @@
     </div>
 
     <div class="special-dish">
-        <div class="sd-card">
+        <div class="sp-card">
             <div class="left-item">
-                <div class="sd-card-img pork-img"></div>
+                <div class="sp-card-img pork-img"></div>
             </div>
 
             <div class="right-item">
-                <div class="sd-tag">house favourite</div>
-                <div class="sd-title">Twice Cooked Pork</div>
-                <div class="sd-desc">Nunc nec neque cras id dui curabitur blandit mollis lacus.</div>
+                <div class="sp-tag">house favourite</div>
+                <div class="sp-title">Twice Cooked Pork</div>
+                <div class="sp-desc">Nunc nec neque cras id dui curabitur blandit mollis lacus.</div>
 
-                <div class="sd-action">
+                <div class="sp-action">
                     <div>
                         <form>
                             <button type="button" class="value-button decrease"
@@ -138,6 +145,94 @@
                     </div>
                     <div><button class="atc">ADD TO CART</button></div>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fine-dish-section">
+        <div class="fd-header">
+            <p>CHEF'S SIGNATURES</p>
+            <h3>FINE DINING FAVORITES</h3>
+        </div>
+
+        <div class="fd-grid">
+            <div class="fd-card">
+                <div class="fd-img salmon"></div>
+                <div class="fd-content">
+                    <div class="fd-title">AHI SALMON NIGIRI</div>
+                    <div class="fd-desc">Fresh salmon served nigiri-style with a clean, delicate finish.</div>
+                    <div class="fd-price">$ 28</div>
+                </div>
+                <div class="fd-action">
+                    <div>
+                        <form>
+                            <button type="button" class="value-button decrease"
+                                aria-label="Decrease quantity">-</button>
+                            <input type="number" class="quantity" value="1" min="1" />
+                            <button type="button" class="value-button increase"
+                                aria-label="Increase quantity">+</button>
+                        </form>
+                    </div>
+                    <div><button class="add">ADD TO CART</button></div>
+                    <div><button class="view">VIEW CART</button></div>
+                </div>
+            </div>
+
+            <div class="fd-card">
+                <div class="fd-img sushi"></div>
+                <div class="fd-content">
+                    <div class="fd-title">CHAR SIU & SUSHIS</div>
+                    <div class="fd-desc">Cantonese barbecue pork paired with an assortment of freshly prepared sushi.
+                    </div>
+                    <div class="fd-price">$ 48</div>
+                </div>
+                <div class="fd-action">
+                    <div>
+                        <form>
+                            <button type="button" class="value-button decrease"
+                                aria-label="Decrease quantity">-</button>
+                            <input type="number" class="quantity" value="1" min="1" />
+                            <button type="button" class="value-button increase"
+                                aria-label="Increase quantity">+</button>
+                        </form>
+                    </div>
+                    <div><button class="add">ADD TO CART</button></div>
+                    <div><button class="view">VIEW CART</button></div>
+                </div>
+            </div>
+
+            <div class="fd-card">
+                <div class="fd-img rolls"></div>
+                <div class="fd-content">
+                    <div class="fd-title">CALIFORNIA ROLLS</div>
+                    <div class="fd-desc">Fresh sushi rolls filled with crab, avocado, cucumber, and creamy mayonnaise.
+                    </div>
+                    <div class="fd-price">$ 22</div>
+                </div>
+                <div class="fd-action">
+                    <div>
+                        <form>
+                            <button type="button" class="value-button decrease"
+                                aria-label="Decrease quantity">-</button>
+                            <input type="number" class="quantity" value="1" min="1" />
+                            <button type="button" class="value-button increase"
+                                aria-label="Increase quantity">+</button>
+                        </form>
+                    </div>
+                    <div><button class="add">ADD TO CART</button></div>
+                    <div><button class="view">VIEW CART</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="checkout-section">
+        <div class="checkout-content">
+            <p class="checkout-subtitle">READY TO CHECKOUT?</p>
+            <h2 class="checkout-title">REVIEW YOUR CART</h2>
+            <p class="checkout-desc">You still can edit your product quantity in the cart.</p>
+            <div>
+                <button class="btn-checkout">VIEW CART AND CHECKOUT</button>
             </div>
         </div>
     </div>

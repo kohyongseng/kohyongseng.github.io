@@ -32,6 +32,10 @@
     margin-top: 420px;
 }
 
+.second {
+    display: none;
+}
+
 .title {
     font-family: 'Work Sans', sans-serif;
     font-size: 14px;
@@ -112,7 +116,8 @@
 
 .ds-header {
     margin-bottom: 40px;
-    margin-left: 85px;
+    margin-left: 40px;
+    max-width: 1200px;
 }
 
 .ds-header p {
@@ -135,7 +140,6 @@
     display: flex;
     justify-content: center;
     gap: 30px;
-    flex-wrap: wrap;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -172,7 +176,7 @@
     padding: 30px;
     display: flex;
     flex-direction: column;
-    max-width: 70%;
+    max-width: 80%;
 }
 
 .dish-tag {
@@ -248,7 +252,7 @@
     box-sizing: border-box;
 }
 
-.sd-card {
+.sp-card {
     display: flex;
     flex-direction: row;
     background-color: #000000;
@@ -263,7 +267,7 @@
     min-height: 400px;
 }
 
-.sd-card-img {
+.sp-card-img {
     width: 100%;
     height: 100%;
     background-size: cover;
@@ -282,7 +286,7 @@
     justify-content: center;
 }
 
-.sd-tag {
+.sp-tag {
     font-family: 'Work Sans', sans-serif;
     font-size: 11px;
     letter-spacing: 2px;
@@ -291,7 +295,7 @@
     text-transform: uppercase;
 }
 
-.sd-title {
+.sp-title {
     font-family: 'Bebas Neue', cursive;
     font-size: 38px;
     letter-spacing: 1.5px;
@@ -301,7 +305,7 @@
     font-weight: normal;
 }
 
-.sd-desc {
+.sp-desc {
     font-family: 'Lora', serif;
     font-size: 15px;
     line-height: 1.6;
@@ -310,7 +314,7 @@
     max-width: 400px;
 }
 
-.sd-action {
+.sp-action {
     display: flex;
     align-items: center;
     gap: 20px;
@@ -325,6 +329,189 @@
     font-size: 11px;
     letter-spacing: 2px;
     font-weight: 600;
+}
+
+.fine-dish-section {
+    background-color: #000000;
+    padding: 60px 20px;
+}
+
+.fd-header {
+    max-width: 1200px;
+    margin: 0 auto 40px auto;
+}
+
+.fd-header p {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #888888;
+    margin: 0 0 8px 0;
+    text-transform: uppercase;
+}
+
+.fd-header h3 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 38px;
+    letter-spacing: 1.5px;
+    color: #ffffff;
+    margin: 0;
+    font-weight: normal;
+}
+
+.fd-grid {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.fd-card {
+    background-color: #222222;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 300px;
+    max-width: 380px;
+}
+
+.fd-img {
+    width: 100%;
+    height: 240px;
+    background-size: cover;
+    background-position: center;
+}
+
+.salmon {
+    background-image: url('../image/salmon.png');
+}
+
+.sushi {
+    background-image: url('../image/sushis.png');
+}
+
+.rolls {
+    background-image: url('../image/rolls.png');
+}
+
+.fd-content {
+    padding: 24px 24px 16px 24px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.fd-title {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 26px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    margin-bottom: 12px;
+}
+
+.fd-desc {
+    font-family: 'Lora', serif;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #cccccc;
+    margin-bottom: 16px;
+    min-height: 45px;
+}
+
+.fd-price {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 15px;
+    color: #b89c66;
+    margin-top: auto;
+}
+
+.fd-action {
+    display: flex;
+    gap: 8px;
+    padding: 0 24px 24px 24px;
+    margin-top: auto;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.add {
+    height: 38px;
+    padding: 0px 123px;
+    background-color: #b89c66;
+    color: #ffffff;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 10px;
+    letter-spacing: 1.2px;
+    border: none;
+}
+
+.view {
+    height: 38px;
+    padding: 0 130px;
+    background-color: transparent;
+    border: 1px solid #444444;
+    color: #cccccc;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 10px;
+    letter-spacing: 1.2px;
+}
+
+.checkout-section {
+    background-color: #000000;
+    padding: 100px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.checkout-content {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.checkout-subtitle {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #888888;
+    margin: 0 0 12px 0;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.checkout-title {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 42px;
+    letter-spacing: 1.5px;
+    color: #ffffff;
+    margin: 0 0 16px 0;
+    line-height: 1.1;
+    font-weight: normal;
+}
+
+.checkout-desc {
+    font-family: 'Lora', serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #cccccc;
+    margin: 0 0 32px 0;
+}
+
+.btn-checkout {
+    display: inline-block;
+    padding: 16px 36px;
+    background-color: #b89c66;
+    color: #ffffff;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 11px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    border: none;
 }
 
 form {
@@ -343,6 +530,7 @@ form {
     padding: 0;
     color: inherit;
     font: inherit;
+    background-color: black
 }
 
 .value-button:hover {
@@ -371,4 +559,115 @@ input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
+}
+
+@media (max-width: 1024px) {
+    .menu {
+        display: none;
+    }
+
+    .hamburgers {
+        display: block;
+    }
+
+    .first {
+        display: none;
+    }
+
+    .second {
+        display: block;
+    }
+
+    .dish-action {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .sp-card {
+        flex-direction: column;
+    }
+
+    .pork-img {
+        background-size: cover;
+        height: 260px;
+        min-height: 300px;
+    }
+
+    .right-item {
+        padding: 30px 20px;
+    }
+
+    .sp-title {
+        font-size: 32px;
+    }
+
+    .sp-actions {
+        flex-wrap: wrap;
+    }
+
+    .atc {
+        flex: 1;
+    }
+}
+
+@media (max-width: 640px) {
+    .favourate-section {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 25px;
+        margin: 0 auto;
+    }
+
+    .leftchoose {
+        max-width: 100%;
+    }
+
+    .leftchoose h1 {
+        font-size: 34px;
+    }
+
+    .rightchoose {
+        width: 100%;
+    }
+
+    .btn-cart {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .dish-grid {
+        flex-direction: column;
+    }
+
+    .dish-card {
+        max-width: 100%;
+    }
+
+    .dish-actions {
+        flex-wrap: wrap;
+        /* 手机端按钮自动换行 */
+    }
+
+    .quantity-control {
+        width: 100px;
+    }
+
+    .btn-add-cart {
+        flex: 1;
+    }
+
+    .btn-view-cart {
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    .dish-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dish-card {
+        max-width: 100%;
+        width: 100%;
+    }
 }

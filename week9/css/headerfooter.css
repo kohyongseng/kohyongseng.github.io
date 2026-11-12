@@ -9,6 +9,10 @@ body {
     margin: 0;
 }
 
+a {
+    color: white;
+}
+
 .banner {
     background: black;
     color: white;

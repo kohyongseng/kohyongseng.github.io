@@ -255,3 +255,374 @@
     margin: 0;
     max-width: 650px;
 }
+
+.collage-section {
+    color: #111111;
+    padding: 80px 10px;
+    width: 100%;
+}
+
+.collage-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.dessert-1 {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.dessert-1 img {
+    width: 500px;
+}
+
+.dessert-1 p {
+    position: relative;
+    top: 30px;
+    left: 100px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #111111;
+    text-transform: uppercase;
+    padding: 6px 12px;
+}
+
+.dessert-2 {
+    position: relative;
+    width: 500px;
+    margin-left: auto;
+    left: -300px;
+    bottom: 100px;
+}
+
+.dessert-2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    display: block;
+}
+
+.dessert-2 p {
+    position: absolute;
+    top: 350px;
+    right: 550px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #111111;
+    text-transform: uppercase;
+    white-space: nowrap;
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+.wine {
+    position: relative;
+    width: 420px;
+    height: 300px;
+    margin-right: auto;
+}
+
+.wine img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    display: block;
+}
+
+.wine p {
+    position: absolute;
+    bottom: 30px;
+    left: 450px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #111111;
+    text-transform: uppercase;
+    white-space: nowrap;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 6px 12px;
+    margin: 0;
+    z-index: 2;
+}
+
+.collage-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.footer-tagline {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #666666;
+    margin: 0 0 20px 0;
+    text-transform: uppercase;
+}
+
+.btn-reserve {
+    display: inline-block;
+    padding: 14px 36px;
+    background-color: transparent;
+    border: 1px solid #222222;
+    color: #222222;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+.membership-section {
+    width: 100%;
+    background-color: #000000;
+    padding: 0;
+}
+
+.membership-banner {
+    width: 100%;
+    min-height: 500px;
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../image/promotion-bg3.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.membership-content {
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.membership-title {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 70px;
+    letter-spacing: 2px;
+    color: #ffffff;
+    margin: 0 0 20px 0;
+    font-weight: normal;
+    line-height: 1.1;
+}
+
+.membership-desc {
+    font-family: 'Lora', serif;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #cccccc;
+    margin: 0;
+    max-width: 700px;
+}
+
+.membership-tiers-section {
+    background-color: #ffffff;
+    padding: 80px 20px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.tiers-grid {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tier-card {
+    position: relative;
+    flex: 1;
+    min-width: 300px;
+    max-width: 360px;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px 30px;
+}
+
+.classic-bg {
+    background-image: url(../image/classic.jpg);
+}
+
+.prestige-bg {
+    background-image: url(../image/prestice.jpg);
+}
+
+.elite-bg {
+    background-image: url(../image/elite.jpg);
+}
+
+.tier-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+    z-index: 2;
+}
+
+.tier-tag {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #aaaaaa;
+    margin: 0 0 15px 0;
+    text-transform: uppercase;
+}
+
+.tier-title {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 28px;
+    letter-spacing: 1.5px;
+    color: #ffffff;
+    margin: 0 0 30px 0;
+    font-weight: normal;
+}
+
+.tier-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.tier-list li {
+    font-family: 'Lora', serif;
+    font-size: 14px;
+    color: #dddddd;
+    line-height: 1.4;
+}
+
+.tier-action {
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+}
+
+.btn-apply {
+    width: 100%;
+    max-width: 200px;
+    height: 42px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    color: #ffffff;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+@media (max-width: 1024px) {
+    .menu {
+        display: none;
+    }
+
+    .hamburgers {
+        display: block;
+    }
+
+    .promo-card {
+        flex-direction: column;
+    }
+
+    .promo-img-container {
+        width: 900px;
+        height: 900px;
+        min-height: unset;
+    }
+
+    .promotion-content {
+        padding: 40px 24px;
+    }
+
+    .discover {
+        width: 100%;
+        text-align: center;
+    }
+
+    .seasonal-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .seasonal-card {
+        max-width: 50%;
+        width: 50%;
+    }
+
+    .seasonal-img-wrapper {
+        height: 500px;
+    }
+
+    .seasonal-title {
+        font-size: 36px;
+    }
+
+    .collage-grid {
+        align-items: center;
+        gap: 40px;
+    }
+
+    .dessert-1,
+    .dessert-2,
+    .wine {
+        width: 100%;
+        max-width: 340px;
+        height: auto;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+    }
+
+    .dessert-1 img,
+    .dessert-2 img,
+    .wine img {
+        width: 100%;
+        height: 240px;
+        object-fit: cover;
+    }
+
+    .dessert-1 p,
+    .dessert-2 p,
+    .wine p {
+        position: static;
+        background: transparent;
+        margin-top: 12px;
+        text-align: center;
+        white-space: normal;
+        padding: 0;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 640px) {
+    .tiers-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tier-card {
+        max-width: 100%;
+        width: 100%;
+        height: 500px;
+    }
+}

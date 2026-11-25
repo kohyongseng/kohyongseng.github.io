@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:ital,wght@0,400..700;1,400..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+.body {
+    margin: 0;
+}
+
+.about-section {
+    display: flex;
+    width: 100%;
+    color: #ffffff;
+}
+
+.about-media {
+    width: 100%;
+    min-height: 700px;
+}
+
+.about-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.about-content {
+    width: 100%;
+    background-color: #050505;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 64px 24px;
+}
+
+.about-story-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    margin-bottom: 14px;
+}
+
+.story-line {
+    width: 36px;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.45);
+}
+
+.about-eyebrow {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 15px;
+    letter-spacing: 3px;
+    color: #d8d8d8;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.about-title {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 90px;
+    line-height: 1;
+    letter-spacing: 2px;
+    color: #ffffff;
+    font-weight: normal;
+    margin: 0 0 24px 0;
+    text-transform: uppercase;
+}
+
+.about-desc {
+    font-family: 'Lora', serif;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #dcdcdc;
+    max-width: 440px;
+    margin: 0;
+}
+
+.philosophy-section {
+    color: #111111;
+    padding: 64px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.philosophy-title {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 90px;
+    line-height: 1.1;
+    letter-spacing: 1.5px;
+    color: #000000;
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 20px 36px 20px;
+}
+
+.philosophy-gallery {
+    display: flex;
+    width: 100%;
+    min-height: 460px;
+    gap: 5px;
+    background-position: center;
+    background-size: cover;
+}
+
+.philosophy-img {
+    width: 100%;
+    min-height: 300px;
+    background-size: cover;
+    background-position: center;
+    flex: 1;
+}
+
+.img-left {
+    background-image: url(../image/cp-1.png);
+}
+
+.img-right {
+    background-image: url(../image/cp-2.png);
+}
+
+.philosophy-text-box {
+    width: 100%;
+    padding: 0 24px;
+    display: flex;
+    justify-content: center;
+    max-width: 900px;
+    margin-top: 25px;
+}
+
+.philosophy-desc {
+    font-family: 'Lora', serif;
+    font-size: 20px;
+    line-height: 1.85;
+    color: #222222;
+    text-align: center;
+    max-width: 720px;
+    margin: 0;
+}
+
+.commitment-section {
+    display: flex;
+    width: 100%;
+    background-color: #050505;
+    color: #ffffff;
+}
+
+.commitment-text-col {
+    background-color: #050505;
+    display: flex;
+    align-items: center;
+    padding: 64px 28px;
+    margin: 100px;
+}
+
+.commitment-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    max-width: 350px;
+}
+
+.commitment-title {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 60px;
+    line-height: 1.05;
+    letter-spacing: 2px;
+    color: #ffffff;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin: 0 0 22px 0;
+}
+
+.commitment-desc {
+    font-family: 'Lora', serif;
+    font-size: 20px;
+    line-height: 1.8;
+    color: #e2e2e2;
+    margin: 0;
+}
+
+.commitment-media {
+    display: flex;
+    width: 100%;
+    min-height: 800px;
+    background-position: center;
+    background-size: cover;
+}
+
+.commitment-img {
+    width: 100%;
+    min-height: 300px;
+    background-size: cover;
+    background-position: center;
+    flex: 1;
+}
+
+.commitment-left {
+    background-image: url(../image/oc-1.png);
+}
+
+.commitment-right {
+    background-image: url(../image/oc-2.png);
+}
+
+.achievements-section {
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.78)), url('../image/about-bg2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    padding: 72px 24px;
+    display: flex;
+    justify-content: center;
+}
+
+.achievements-container {
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.achievements-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.achievements-title {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 46px;
+    line-height: 1.05;
+    letter-spacing: 2px;
+    color: #ffffff;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin: 0 0 18px 0;
+}
+
+.achievements-desc {
+    font-family: 'Lora', serif;
+    font-size: 13.5px;
+    line-height: 1.8;
+    color: #e4e4e4;
+    max-width: 680px;
+    margin: 0;
+}
+
+.achievements-grid {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 44px;
+}
+
+.achievement-item {
+    width: 100%;
+    max-width: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.achievement-num {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
+    line-height: 1;
+    letter-spacing: 1.5px;
+    color: #ffffff;
+    margin: 0 0 14px 0;
+}
+
+.achievement-line {
+    width: 48px;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.55);
+    margin-bottom: 24px;
+}
+
+.achievement-badge-box {
+    width: 210px;
+    height: 190px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.achievement-badge {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    display: block;
+}

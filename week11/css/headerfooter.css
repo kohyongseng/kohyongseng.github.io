@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:ital,wght@0,400..700;1,400..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+    margin: 0;
+}
+
+a {
+    color: white;
+}
+
+.banner {
+    color: white;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 10px 50px;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+}
+
+.romaliya {
+    display: flex;
+    align-items: center;
+}
+
+.romaliya p {
+    margin: 20px;
+    font-family: 'Bebas Neue';
+    font-size: 30px;
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+    font-size: 12px;
+    font-family: 'Work Sans';
+    align-items: center;
+}
+
+.hamburgers {
+    display: none;
+}
+
+.footer {
+    color: white;
+    position: relative;
+    width: 100%;
+    min-height: 500px;
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../image/bg3.png);
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer_content {
+    max-width: 650px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.footer_content h1 {
+    margin-left: 25px;
+    font-family: 'Bebas Neue';
+    font-size: 40px;
+}
+
+.brand_slogan {
+    font-family: 'Lora';
+    font-size: 18px;
+    line-height: 1.5;
+    margin-left: 60px;
+    margin-right: 60px;
+    text-align: center;
+    max-width: 50%;
+}
+
+.social_icon {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}

@@ -9,7 +9,8 @@
 }
 
 .banner {
-    position: static
+    position: static;
+    background-color: black;
 }
 
 .recommendation {
